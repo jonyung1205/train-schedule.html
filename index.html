@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Train Schedule</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+
+    <!-- CCS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
+
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+
+    <!-- Moment JS -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <br>
+
+        <!-- Jumbotron -->
+        <div class="jumbotron">
+            <h1 class="text-center">Train Schedule</h1>
+        </div>
+
+        <!-- Table -->
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Vessel Name</th>
+                    <th>Destination</th>
+                    <th>Frequency (min)</th>
+                    <th>Next Arrival</th>
+                    <th>Minutes Away</th>
+                </tr>
+            </thead>
+            <tbody id="table-display">
+        </table>
+
+        <!-- Add Train Form -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <h3 class="panel-title">Train Information</h3>
+                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="vessel-name">Name of the vessel</label>
+                        <input class="form-control" id="vessel-name" type="text">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="destination">Destination</label>
+                        <input class="form-control" id="destination" type="text">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="first-vessel">First Vessel Time -- in military time</label>
+                        <input class="form-control" id="first-vessel" type="text">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="frequency">Frequency (min)</label>
+                        <input class="form-control" id="frequency" type="number">
+                    </div>
+
+                    <button type="button" class="btn btn-dark" id="add-train" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="assets/javascript/logic.js"></script>
+
+</body>
+
+</html>
