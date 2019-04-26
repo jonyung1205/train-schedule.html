@@ -2,4 +2,4 @@
 
 Seventh assignment on creating a train schedule.
 
-Tools/Languages used: HTML, CSS, Bootstrap, Google Fonts, Firebase Database,
+Tools/Languages used: HTML, CSS, Bootstrap, Javascript, Google Fonts, Firebase Database, Moment.js
