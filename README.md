@@ -2,4 +2,4 @@
 
 Seventh assignment on creating a train schedule.
 
-Tools/Languages used: 
+Tools/Languages used: HTML, 
